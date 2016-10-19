@@ -119,8 +119,8 @@ Par exemple, pour créer une image à partir de données recues par une requête
 pouvez utiliser le code suivant:
 
     >>> from PIL import Image
-    >>> from StringIO import StringIO
-    >>> i = Image.open(StringIO(r.content))
+    >>> from io import BytesIO
+    >>> i = Image.open(BytesIO(r.content))
 
 
 Réponse JSON
